@@ -1,4 +1,4 @@
-# Epikriisi-oikomisessa
+# epikriisi-oikomisessa
 Building AI course project
 AI-AVUSTEINEN EPIKRIISI OIKOMISESSA  final project for the Building AI course
 
