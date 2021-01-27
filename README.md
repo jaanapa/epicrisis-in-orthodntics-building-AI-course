@@ -1,43 +1,49 @@
-# epikriisi-oikomisessa
-Building AI course project
-AI-AVUSTEINEN EPIKRIISI OIKOMISESSA  final project for the Building AI course
+Project AI-assisted medical case summary in orthodontics final project for the Building AI course
 
 ## Summary
 
-Suomessa arviolta yli 20000 uutta oikomispotilasta vuodessa julkisella puolella.Oikomishoito kestää yleensä 1-6 vuotta sisältäen useita käyntejä.
-Epikriisi on loppuyhteenveto tehdystä hoidosta ja sen kirjoittamiseen menee paljon työaikaa, koska tarvittavat tiedot etsitään useiden vuosien merkinnöistä.
-AI menetelmien avulla epikriisin teko nopeutuisi . 
+In Finland, it is estimated that more than 20,000 new orthodontic patients a year on the public side. Orthodontic treatment usually lasts 1-6 years, including multiple visits to clinic.
+The epicrisis is the final summary of the treatment done and takes quite a lot of time to write, as the necessary information is sought from the records over several years.
+Using AI methods would speed up the writing process.
 
 
 ## Background
 
-AI- metodeilla olisi mahdollista löytää potilaskäyntien kirjauksista oleelliset kohdat hoidon kulusta. Oikomista tekevien (lähinnä julkinen puoli)hammaslääkäreiden työaikaa
-säästyisi muille tehtäville. 
+With AI methods, it would be possible to find relevant points in the records of patient visits about the course of treatment. Working time of dentists doing orthodontics (mainly the public side)
+would be spared for other tasks.
 
-This is how you make a list, if you need one:
-* problem 1 Kirjattava, milloin alkutarkastus ollut, diagnoosi ja hoitosuunnitelma
-* problem 2 Kirjattava, mikä koje vuorollaan ollut ja kuinka pitkään se on ollut käytössä 
-(yleensä ollut useita eri kojeita peräkkäin. Esim. oikomislevy, kiinteätkojeet, retentiolevy)
-* problem 3 Kirjattava, milloin lopputarkastus on ollut ja hoidon lopputulos
+## Problems
+* problem 1 Record when the initial examination was, diagnosis and treatment plan
+* problem 2 Record which appliance has been in turn and for how long it has been in use
+(usually several different appliances in a row. E.g. removable active plate, headgear, fixed appliances, retention plate)
+* problem 3 Record when the final examination has taken place and the outcome of the treatment
 
 
 ## How is it used?
 
-Jokaiseen hoitokäyntiin kirjataan tiedot käynnistä, sen sisällöstä ja lisäksi erikseen toimenpidekoodit. Alkutarkastus ja lopputarkastus tulevat omille erillisille
-lomakkeille (tai kohtiin). Kirjattujen toimenpidekoodien avulla voitaisiin etsiä ne käynnit, jolloin epikriisin kannalta olennaista on tapahtunut (esim. irtokojeen sovitus 
-tai kiinteän kojeen purkaminen- toimenpidekoodit). Tämä tapahtuisi Bayer´s classifiersin tapaisesti.Natural Language Processing avulla poimittaisiin oikomislaitteiden nimet
-ja myös alku- ja lopputarkastusten tiedot. Tärkeintä olisi löytää suuresta materiaalimäärästä ne käynnit, jolloin uusi koje tullut käyttöön ja vanhan käyttö loppunut.Lisäksi
-tietysti kyseisen oikomiskojeen nimi.
-Oikomista tekevät hammaslääkärit käyttäisivät ohjelmaa ja se olisi saatavana nykyisiin potilastietojärjestelmiin sopivana (on eri järjestelmiä käytössä, mutta toimenpidekoodit
-ovat samat)
+Information about the visit, its content and, in addition, the medical action codes are recorded for each treatment visit. The Initial Inspection and the Final Inspection come separately
+forms (or sections) in the system. The recorded medical action codes could be used to search for visits where essentials for the epicrisis have occurred (e.g. when a new appliance come to use 
+or fixed appliances are made ). This would happen in the same way as Bayer´s classifiers. Natural Language Processing would be used to extract the names of the orthodontic appliances
+and also to get an information on initial and final inspections. The most important thing would be to find out from a large amount of material those visits, when the new instrument came into use and the old one completed. In addition , of course, pick up the names of those orthodontic appliance.
+The program would be used by dentist doing orthodontics and would be available to fit existing electronic patient record systems (there are different systems in use, but the medical action codes
+are the same).
+
+
+
 
 ## Challenges
 
-Koska en hallitse koodausta, on tämä projekti vain ajatuksen tasolla. En myöskään tiedä, onko ongelma sellainen, että sen ratkaisu olisi taloudellisesti kannataavaa kunnille. 
-Jos uusi ohjelma olisi kallis ja hankala saada toimimaan nykyisissä tietojärjestelmissä, ei rahoitusta varmasti löydy. Lisäksi osa potilaan tiedoista voi nyt sijaita eri 
-jäejestelmässä (vanhemmassa), kuin uudemmat tiedot. Siksi toimenpidekoodit olisivat lähtökohtana, ne eivät ole muuttuneet.
+Since I don’t master coding, this project is just on a thought level. Nor do I know whether the problem is such that its solution would be economically viable for the municipalities.
+If the new program were expensive and difficult to get to work with existing patient record systems, no funding would certainly be found. In addition, some of the patient record may now be located in the older
+systems than newer data. Therefore, the medical action codes would be the starting point, they have not changed.
 
 ## What next?
 
-Ehkä LifeCaren tai Appotin tai vastaavien potilastietojarjestelmien tekijät joskus kiinnostuvat ideasta...
+Maybe the creators of LifeCare , Appot , Aster or similar electronic patient record systems could be interested in the idea ...
+
+
+Glossary
+
+Medical action code = toimenpidekoodi
+Electronic patient record system = potilastietojärjestelmä
 
