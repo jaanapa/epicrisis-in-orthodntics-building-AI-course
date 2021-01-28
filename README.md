@@ -1,4 +1,4 @@
-# AI-assisted medical case summary in orthodontics final project for the Building AI course
+# epicrisis in orthodontics final project for the Building AI course
 
 ## Summary
 
